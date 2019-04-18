@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gmmh.heroes.Creditos">
+    <ScrollView
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+            <TextView
+                android:id="@+id/nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre"
+                android:textSize="28dp"
+                android:textColor="#1a0dab"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/edad"
+                android:layout_below="@+id/nombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:text="24 años"
+                android:textSize="16dp" />
+            <TextView
+                android:id="@+id/correo"
+                android:layout_below="@+id/edad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="g.mizael@hotmail.com"
+                android:textAlignment="center"
+                android:textSize="16dp"/>
+            <TextView
+                android:id="@+id/credit"
+                android:layout_below="@+id/correo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data provided by Marvel. © 2019 MARVEL"
+                android:layout_marginTop="10dp"
+                android:textSize="16dp" />
+        </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

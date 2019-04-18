@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gmmh.heroes.Carga">
+
+    <ImageView
+        android:id="@+id/carga_img"
+        android:layout_marginTop="100dp"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:foregroundGravity="center"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/avangers" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_below="@+id/carga_img"
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="true"
+        android:indeterminateTint="#f10c18"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:min="0" />
+</RelativeLayout>

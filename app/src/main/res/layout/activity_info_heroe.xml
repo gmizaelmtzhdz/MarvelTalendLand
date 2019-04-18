@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gmmh.heroes.InfoHeroe">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+        <ImageView
+            android:id="@+id/img_heroe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/nombre_heroe"
+            android:layout_below="@+id/img_heroe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOMBRE"
+            android:textSize="28dp"
+            android:textAlignment="center"/>
+        <TextView
+            android:id="@+id/biografia_heroe"
+            android:layout_below="@+id/nombre_heroe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="BIOGRAFÍA"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/titulo_comics_heroe"
+            android:layout_below="@+id/biografia_heroe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listado de Comics en los que apareció:"
+            android:textSize="20dp"/>
+        <TextView
+            android:id="@+id/comics_heroe"
+            android:layout_below="@+id/titulo_comics_heroe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingLeft="10dp"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/titulo_series_heroe"
+            android:layout_below="@+id/comics_heroe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Listado de Series en los que apareció:"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/series_heroe"
+            android:layout_below="@+id/titulo_series_heroe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:paddingLeft="10dp"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/credit"
+            android:layout_below="@+id/series_heroe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data provided by Marvel. © 2019 MARVEL"
+            android:layout_marginTop="10dp"
+            android:textSize="16dp" />
+    </RelativeLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
